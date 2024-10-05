@@ -31,8 +31,8 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Take repeated screenshots and click specified location.")
     parser.add_argument('--start_num', type=int, required=True, help="Starting number for screenshot filenames (e.g., 1 for 0001.png)")
     parser.add_argument('--count', type=int, required=True, help="Number of screenshots to take")
-    parser.add_argument('--region', type=int, nargs=4, default=[393, 0, 3054, 2160], help="Region to capture (x, y, width, height) [default: 395 0 3052 2180]")
-    parser.add_argument('--click_position', type=int, nargs=2, default=[3770, 1068], help="Position to click (x, y) [default: 3770 1068]")
+    parser.add_argument('--region', type=int, nargs=4, default=[83, 104, 699, 901], help="Region to capture (x, y, width, height) [default: 395 0 3052 2180]")
+    parser.add_argument('--click_position', type=int, nargs=2, default=[805, 560], help="Position to click (x, y) [default: 3770 1068]")
     parser.add_argument('--sleep_time', type=float, default=0.5, help="Time to sleep between actions in seconds (default: 1.0)")
     
     args = parser.parse_args()
